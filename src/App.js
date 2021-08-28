@@ -4,7 +4,8 @@ import './App.css';
 function App() {
   return (
     <div className="App">
-      <form name="contact" method="POST" onSubmit="submit" data-netlify="true">
+       <form name="contact v1" method="POST" onSubmit="submit" data-netlify="true">
+        <input type="hidden" name="form-name" value="contact v1" />
         <p>
           <label>Your Name: <input type="text" name="name" /></label>
         </p>
@@ -16,7 +17,8 @@ function App() {
           <label>Message: <textarea name="message"></textarea></label>
         </p>
         <p>
-    
+
+
           <button type="submit">Send</button>
         </p>
       </form>
